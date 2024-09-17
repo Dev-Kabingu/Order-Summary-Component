@@ -1,0 +1,109 @@
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+body{
+    background: url(../assets/images/pattern-background-desktop.svg)no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 30%;
+    margin: auto;
+    /* border: 2px solid red; */
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0, .1);
+}
+.heroImage{
+    /* border: 3px solid red; */
+    width: 100%;
+}
+.heroImage img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+     
+}
+.cardContent{
+    padding: 1rem 3rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+.cardContent h1{
+    margin-bottom: 1rem; 
+   
+}
+.cardContent p{
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: hsl(224, 23%, 55%);
+}
+.annualPlan{
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.paymentBtn, .cancelBtn{
+    padding: 13px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.paymentBtn{
+    background-color: blue;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 40px rgba(0,0,0, .3);
+    
+}
+.paymentBtn:hover{
+    background: hsl(224, 75%, 51%);
+    transition: all 1s ease;
+}
+.cancelBtn{
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+}
+.paymentBtn a{
+    text-decoration: none;
+    color: white;
+}
+.cancelBtn a{
+    text-decoration: none;
+}
+
+.cancelBtn a:hover{
+    color: black;
+    
+}
+@media only screen and (max-width:750px){
+    .container{
+        width: 90%;
+       
+        
+    }
+    body{
+        background: url(../assets/images/pattern-background-mobile.svg)no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    .cardContent h1{
+        font-size: 24px;
+    }
+    .annualPlantText h2{
+        font-size: 18px;
+    }
+}
